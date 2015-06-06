@@ -4,6 +4,8 @@ ARDUINO_DIR = /usr/share/arduino/
 #ALTERNATE_CORE = proMicro
 #ALTERNATE_CORE_PATH = /usr/share/arduino/hardware/proMicro
 
+NO_CORE_MAIN_CPP = "fee"
+
 
 TARGET = el-sequencer
 ARDUINO_LIBS =

@@ -28,7 +28,7 @@ void setup() {
   pinMode(solenoidPin, OUTPUT);
   pinMode(hsiPin     , OUTPUT);
   digitalWrite(solenoidPin, LOW);
-  digitalWrite(hsiPin     , HIGH);
+  digitalWrite(hsiPin     , LOW);
   Serial.begin(9600);
 
   for (int i = 2; i < 10; i++) {
@@ -57,6 +57,9 @@ void loop ()
                 break;
             case 8:
                 digitalWrite(solenoidPin, switchPos);
+                break;
+            case 9:
+                digitalWrite(hsiPin, switchPos);
                 break;
             }
 
