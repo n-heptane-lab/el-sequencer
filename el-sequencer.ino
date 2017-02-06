@@ -32,11 +32,26 @@ void setup() {
   Serial.begin(9600);
 
   for (int i = 2; i < 10; i++) {
-      digitalWrite(i, HIGH);
+      digitalWrite(i, LOW);
   }
 
+      digitalWrite(6, HIGH);
 }
+/*
+void loop ()
+{
 
+  for (int i = 2; i < 10; i++) {
+    digitalWrite(i, LOW);
+  }
+  delay(100);
+
+  for (int i = 2; i < 10; i++) {
+    digitalWrite(i, HIGH);
+  }
+  delay(100);
+}
+*/
 void loop ()
 {
     char val, channel, switchPos;

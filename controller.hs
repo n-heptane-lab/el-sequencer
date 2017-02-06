@@ -16,10 +16,10 @@ import Data.Char
 import Data.Data (Data, Typeable)
 import Data.Word (Word8)
 import Data.Default (def)
-import Graphics.UI.SDL
-import Core
-import Parse
-import RawMidi
+-- import Graphics.UI.SDL
+import Sound.NH.MIDI.Core
+import Sound.NH.MIDI.Parse
+-- import RawMidi
 import Prelude hiding (read)
 import System.Hardware.Serialport
 import System.IO (BufferMode(..), hGetLine, hWaitForInput, hSetBuffering, stdin, stdout)
